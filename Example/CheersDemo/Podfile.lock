@@ -1,0 +1,16 @@
+PODS:
+  - Cheers (0.1.0)
+
+DEPENDENCIES:
+  - Cheers (from `../../`)
+
+EXTERNAL SOURCES:
+  Cheers:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  Cheers: 201762fb5b57f33fac7c84122d044e64ae5c01eb
+
+PODFILE CHECKSUM: 5e6d52651a9c11cd39c5d53c6768b84685a3eb28
+
+COCOAPODS: 1.2.1
