@@ -23,6 +23,8 @@ public struct Config {
     UIColor.blue,
     UIColor.yellow,
     UIColor.purple,
+    UIColor.orange,
+    UIColor.cyan
   ]
 
   public init() {
