@@ -9,11 +9,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     view.backgroundColor = UIColor.white
 
-    let string = NSAttributedString(string: "😀", attributes: [
-      NSFontAttributeName: UIFont.systemFont(ofSize: 7)
-    ])
-
-    cheerView.config.kind = .text([string])
+    cheerView.config.kind = .confetti
     view.addSubview(cheerView)
   }
 

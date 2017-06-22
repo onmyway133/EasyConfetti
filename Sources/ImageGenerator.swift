@@ -21,4 +21,24 @@ class ImageGenerator {
       string.draw(in: rect)
     }
   }
+
+  func rectangle() -> UIImage? {
+    return generate { context in
+      let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height/2)
+      let path = UIBezierPath(rect: rect)
+      context?.setFillColor(UIColor.black.cgColor)
+      context?.addPath(path.cgPath)
+      context?.fillPath()
+    }
+  }
+
+  func circle() -> UIImage? {
+    return generate { context in
+      let rect = CGRect(origin: .zero, size: size)
+      let path = UIBezierPath(ovalIn: rect)
+      context?.setFillColor(UIColor.black.cgColor)
+      context?.addPath(path.cgPath)
+      context?.fillPath()
+    }
+  }
 }

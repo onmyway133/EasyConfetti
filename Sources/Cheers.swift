@@ -21,7 +21,7 @@ public class CheerView: UIView {
       cell.velocityRange = 250
       cell.emissionLongitude = CGFloat.pi
       cell.spinRange = 5
-      cell.scale = 2
+      cell.scale = 0.5
       cell.scaleRange = 0.25
       cell.color = self.pickColor().cgColor
       cell.alphaSpeed = -0.025
@@ -50,7 +50,7 @@ public class CheerView: UIView {
 
     switch config.kind {
     case .confetti:
-      return []
+      return [generator.rectangle(), generator.circle()].flatMap({ $0 })
     case .image(let images):
       return images
     case .text(let strings):
