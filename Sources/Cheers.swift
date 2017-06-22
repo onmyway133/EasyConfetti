@@ -33,7 +33,7 @@ public class CheerView: UIView {
       cell.emissionRange = CGFloat.pi * 0.2
       cell.spinRange = 5
       cell.scale = 0.3
-      cell.scaleRange = 0.1
+      cell.scaleRange = 0.2
       cell.color = colors[(index % colors.count)].cgColor
       cell.alphaSpeed = -0.1
       cell.contents = image.cgImage
