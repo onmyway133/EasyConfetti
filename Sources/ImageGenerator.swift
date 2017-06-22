@@ -1,13 +1,24 @@
 import UIKit
 
 class ImageGenerator {
-  func generate() -> UIImage? {
-    UIGraphicsBeginImageContextWithOptions(
-      CGSize(width: 10, height: 10), true, UIScreen.main.scale)
+  private let size = CGSize(width: 20, height: 20)
 
+  private func generate(block: (CGContext?) -> Void) -> UIImage? {
+    UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
+    let context = UIGraphicsGetCurrentContext()
+    block(context)
     let image = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
 
     return image
+  }
+
+  func generate(string: NSAttributedString) -> UIImage? {
+    return generate { context in
+      let rect = CGRect(x: 0, y: 0,
+                        width: size.width, height: size.height)
+      context?.clear(rect)
+      string.draw(in: rect)
+    }
   }
 }

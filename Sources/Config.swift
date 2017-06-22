@@ -2,12 +2,20 @@ import UIKit
 
 public enum Kind {
   case confetti
-  case image(UIImage)
-  case text(String)
+  case image([UIImage])
+  case text([NSAttributedString])
 }
 
 public struct Config {
-  var kind: Kind = .confetti
+  public var kind: Kind = .confetti
+  public var colors: [UIColor] = [
+    UIColor.red,
+    UIColor.green,
+    UIColor.blue,
+    UIColor.yellow,
+    UIColor.purple,
+    UIColor.brown
+  ]
 
   public init() {
     
