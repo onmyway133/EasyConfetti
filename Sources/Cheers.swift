@@ -5,12 +5,18 @@ public class CheerView: UIView {
   public var config = Config()
   var emitter: CAEmitterLayer?
 
+  public override func didMoveToSuperview() {
+    super.didMoveToSuperview()
+
+    isUserInteractionEnabled = false
+  }
+
   /// Start animation
   public func start() {
     stop()
 
     let emitter = CAEmitterLayer()
-    emitter.emitterPosition = CGPoint(x: frame.width / 2.0, y: 50)
+    emitter.emitterPosition = CGPoint(x: frame.width / 2.0, y: 0)
     emitter.emitterShape = kCAEmitterLayerLine
     emitter.emitterSize = CGSize(width: frame.width, height: 1)
     emitter.renderMode = kCAEmitterLayerAdditive

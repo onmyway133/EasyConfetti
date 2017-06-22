@@ -29,20 +29,20 @@
                                     <constraint firstAttribute="height" constant="128" id="ifz-DQ-V6C"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1f-i2-K8p">
-                                <rect key="frame" x="166" y="318.5" width="42" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJD-ag-877">
+                                <rect key="frame" x="166.5" y="318" width="42" height="30"/>
                                 <state key="normal" title="Cheer"/>
                                 <connections>
-                                    <action selector="buttonTouched:" destination="r6a-yB-HHV" eventType="touchUpInside" id="Xar-Wi-4ra"/>
+                                    <action selector="buttonTouched:" destination="r6a-yB-HHV" eventType="touchUpInside" id="3AD-N6-vsT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mcf-VG-LPf" firstAttribute="top" secondItem="5Gg-9U-U1J" secondAttribute="topMargin" constant="100" id="2xt-p0-MsH"/>
-                            <constraint firstItem="Q1f-i2-K8p" firstAttribute="centerY" secondItem="5Gg-9U-U1J" secondAttribute="centerY" id="3HT-u4-OSC"/>
                             <constraint firstItem="mcf-VG-LPf" firstAttribute="centerX" secondItem="5Gg-9U-U1J" secondAttribute="centerX" id="Gcf-HQ-CsE"/>
-                            <constraint firstItem="Q1f-i2-K8p" firstAttribute="centerX" secondItem="5Gg-9U-U1J" secondAttribute="centerX" id="pkj-RM-rpK"/>
+                            <constraint firstItem="uJD-ag-877" firstAttribute="centerY" secondItem="5Gg-9U-U1J" secondAttribute="centerY" id="a5M-Ka-3nz"/>
+                            <constraint firstItem="uJD-ag-877" firstAttribute="centerX" secondItem="5Gg-9U-U1J" secondAttribute="centerX" id="d9b-mp-fW2"/>
                         </constraints>
                     </view>
                 </viewController>
