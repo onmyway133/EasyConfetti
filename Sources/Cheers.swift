@@ -22,8 +22,9 @@ public class CheerView: UIView {
     emitter.renderMode = kCAEmitterLayerAdditive
 
     let colors = config.colors.shuffled()
+    var cells = [CAEmitterCell]()
 
-    let cells: [CAEmitterCell] = pickImages().enumerated().map({ index, image in
+    zip(pickImages(), colors.shuffled()).forEach { image, color in
       let cell = CAEmitterCell()
       cell.birthRate = 10
       cell.lifetime = 20.0
@@ -34,7 +35,7 @@ public class CheerView: UIView {
       cell.spinRange = 5
       cell.scale = 0.3
       cell.scaleRange = 0.2
-      cell.color = colors[(index % colors.count)].cgColor
+      cell.color = color.cgColor
       cell.alphaSpeed = -0.1
       cell.contents = image.cgImage
       cell.xAcceleration = 20
@@ -42,8 +43,8 @@ public class CheerView: UIView {
       cell.greenRange = 0.8
       cell.blueRange = 0.8
 
-      return cell
-    })
+      cells.append(cell)
+    }
 
     emitter.emitterCells = cells
 
