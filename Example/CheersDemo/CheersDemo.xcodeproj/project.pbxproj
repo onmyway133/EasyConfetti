@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		69731E432382F7C945D51C18 /* Pods_CheersDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263978C0B6DEE64C024C721B /* Pods_CheersDemo.framework */; };
-		D21B44C41EFC0E7000BC9261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21B44C31EFC0E7000BC9261 /* Main.storyboard */; };
 		D28333C11EFAC4E800969809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28333BF1EFAC4E800969809 /* Assets.xcassets */; };
+		D2CD7C7F1EFC1360005123AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21B44C31EFC0E7000BC9261 /* Main.storyboard */; };
 		D5C7F74E1C3BC9CE008CDDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F74C1C3BC9CE008CDDBA /* LaunchScreen.storyboard */; };
 		D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */; };
 		D5C7F75C1C3BCA1E008CDDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */; };
@@ -180,7 +180,7 @@
 				D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */,
 				D28333C11EFAC4E800969809 /* Assets.xcassets in Resources */,
 				D5C7F74E1C3BC9CE008CDDBA /* LaunchScreen.storyboard in Resources */,
-				D21B44C41EFC0E7000BC9261 /* Main.storyboard in Resources */,
+				D2CD7C7F1EFC1360005123AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,7 @@
                                 <rect key="frame" x="166" y="318.5" width="42" height="30"/>
                                 <state key="normal" title="Cheer"/>
                                 <connections>
-                                    <action selector="buttonTouched:" destination="r6a-yB-HHV" eventType="touchUpInside" id="dRp-wy-ogY"/>
+                                    <action selector="buttonTouched:" destination="r6a-yB-HHV" eventType="touchUpInside" id="Xar-Wi-4ra"/>
                                 </connections>
                             </button>
                         </subviews>
