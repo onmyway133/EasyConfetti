@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     super.viewDidAppear(animated)
 
     cheerView.start()
+
+    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+      self.cheerView.stop()
+    }
   }
 
   override func viewDidLayoutSubviews() {

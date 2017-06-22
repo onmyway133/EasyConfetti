@@ -15,17 +15,20 @@ public class CheerView: UIView {
 
     let cells: [CAEmitterCell] = pickImages().map({ image in
       let cell = CAEmitterCell()
-      cell.birthRate = 1
+      cell.birthRate = 10
       cell.lifetime = 20.0
-      cell.velocity = 200
-      cell.velocityRange = 250
+      cell.velocity = 250
+      cell.velocityRange = 50
       cell.emissionLongitude = CGFloat.pi
       cell.spinRange = 5
-      cell.scale = 0.5
+      cell.scale = 0.3
       cell.scaleRange = 0.25
       cell.color = self.pickColor().cgColor
-      cell.alphaSpeed = -0.025
+      cell.alphaSpeed = -0.1
       cell.contents = image.cgImage
+      cell.xAcceleration = 20
+      cell.redRange = 0.8
+      cell.greenRange = 0.8
 
       return cell
     })
@@ -37,12 +40,7 @@ public class CheerView: UIView {
   }
 
   public func stop() {
-    guard let emitter = emitter else {
-      return
-    }
-
-    emitter.birthRate = 0
-    emitter.removeFromSuperlayer()
+    emitter?.birthRate = 0
   }
 
   func pickImages() -> [UIImage] {
@@ -50,7 +48,9 @@ public class CheerView: UIView {
 
     switch config.kind {
     case .confetti:
-      return [generator.rectangle(), generator.circle()].flatMap({ $0 })
+      return [generator.rectangle(), generator.circle(),
+              generator.triangle(), generator.curvedQuadrilateral()]
+        .flatMap({ $0 })
     case .image(let images):
       return images
     case .text(let strings):

@@ -14,7 +14,6 @@ public struct Config {
     UIColor.blue,
     UIColor.yellow,
     UIColor.purple,
-    UIColor.brown
   ]
 
   public init() {
