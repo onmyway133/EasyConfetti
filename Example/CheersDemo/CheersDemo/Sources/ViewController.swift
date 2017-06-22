@@ -9,7 +9,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     view.backgroundColor = UIColor.white
 
-    cheerView.config.kind = .confetti
+    cheerView.config.particle = .confetti
     view.addSubview(cheerView)
   }
 

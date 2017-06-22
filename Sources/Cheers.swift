@@ -1,9 +1,11 @@
 import UIKit
 
+/// The view to show particles
 public class CheerView: UIView {
   public var config = Config()
   var emitter: CAEmitterLayer?
 
+  /// Start animation
   public func start() {
     stop()
 
@@ -43,6 +45,7 @@ public class CheerView: UIView {
     self.emitter = emitter
   }
 
+  /// Stop animation
   public func stop() {
     emitter?.birthRate = 0
   }
@@ -50,7 +53,7 @@ public class CheerView: UIView {
   func pickImages() -> [UIImage] {
     let generator = ImageGenerator()
 
-    switch config.kind {
+    switch config.particle {
     case .confetti:
       return [generator.rectangle(), generator.circle(),
               generator.triangle(), generator.curvedQuadrilateral()]

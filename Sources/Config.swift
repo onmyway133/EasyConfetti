@@ -1,13 +1,22 @@
 import UIKit
 
-public enum Kind {
+/// The shape of particles
+///
+/// - confetti: A built in mix of basic shapes
+/// - image: An array of images
+/// - text: An array of texts
+public enum Particle {
   case confetti
   case image([UIImage])
   case text([NSAttributedString])
 }
 
+/// Used to configure CheerView
 public struct Config {
-  public var kind: Kind = .confetti
+  /// Specify the particle shapes
+  public var particle: Particle = .confetti
+
+  /// The list of available colors. This will be shuffled
   public var colors: [UIColor] = [
     UIColor.red,
     UIColor.green,
