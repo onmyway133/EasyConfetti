@@ -13,9 +13,7 @@ class ViewController: UIViewController {
     view.addSubview(cheerView)
   }
 
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-
+  @IBAction func buttonTouched(_ sender: UIButton) {
     cheerView.start()
 
     DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
