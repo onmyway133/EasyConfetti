@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		69731E432382F7C945D51C18 /* Pods_CheersDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263978C0B6DEE64C024C721B /* Pods_CheersDemo.framework */; };
+		D28333C11EFAC4E800969809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28333BF1EFAC4E800969809 /* Assets.xcassets */; };
 		D5C7F74E1C3BC9CE008CDDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F74C1C3BC9CE008CDDBA /* LaunchScreen.storyboard */; };
 		D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */; };
 		D5C7F75C1C3BCA1E008CDDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 		1B521A2EA46EEFC5EEA77CDC /* Pods-CheersDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo/Pods-CheersDemo.release.xcconfig"; sourceTree = "<group>"; };
 		263978C0B6DEE64C024C721B /* Pods_CheersDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheersDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7ED1DC8C014FA3815149A06 /* Pods-CheersDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo/Pods-CheersDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D28333BF1EFAC4E800969809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C7F7401C3BC9CE008CDDBA /* CheersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C7F74D1C3BC9CE008CDDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C7F74F1C3BC9CE008CDDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */,
 				D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */,
+				D28333BF1EFAC4E800969809 /* Assets.xcassets */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */,
+				D28333C11EFAC4E800969809 /* Assets.xcassets in Resources */,
 				D5C7F74E1C3BC9CE008CDDBA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
