@@ -7,6 +7,10 @@
 [![Platform](https://img.shields.io/cocoapods/p/Cheers.svg?style=flat)](http://cocoadocs.org/docsets/Cheers)
 ![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
 
+<div align = "center">
+<img src="demo.gif" width="300" height="510" />
+</div>
+
 ## Usage
 
 ### Basic
