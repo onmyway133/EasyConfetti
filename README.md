@@ -32,7 +32,7 @@ cheerView.stop()
 
 ### Configuration
 
-Configuration will be applicated at the next `start`
+Configuration will be applied at the next `start`
 
 ```
 // Use predefined confetti
