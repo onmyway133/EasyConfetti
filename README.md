@@ -34,7 +34,7 @@ cheerView.stop()
 
 Configuration will be applied at the next `start`
 
-```
+```swift
 // Use predefined confetti
 cheerView.config.particle = .confetti
 
@@ -76,7 +76,7 @@ Hyper Interaktiv AS, ios@hyper.no
 
 ## Credit
 
-- Background image from the demo is from http://www.freepik.com/
+- Background image in the demo is from http://www.freepik.com/
 
 ## Contributing
 
