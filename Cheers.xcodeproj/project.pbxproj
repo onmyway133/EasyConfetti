@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D20836101EF7B4A4004ED8E0 /* Cheers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208360F1EF7B4A4004ED8E0 /* Cheers.swift */; };
-		D20836111EF7B4A4004ED8E0 /* Cheers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208360F1EF7B4A4004ED8E0 /* Cheers.swift */; };
 		D20836131EF7B4BB004ED8E0 /* CheerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20836121EF7B4BB004ED8E0 /* CheerTests.swift */; };
-		D20836141EF7B4BB004ED8E0 /* CheerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20836121EF7B4BB004ED8E0 /* CheerTests.swift */; };
+		D2F28FBA1EFD0721007DD353 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F28FB71EFD0721007DD353 /* Config.swift */; };
+		D2F28FBC1EFD0721007DD353 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F28FB81EFD0721007DD353 /* Extensions.swift */; };
+		D2F28FBE1EFD0721007DD353 /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F28FB91EFD0721007DD353 /* ImageGenerator.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Cheers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Cheers.framework */; };
-		D5C6294A1C3A7FAA007F7B7C /* Cheers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Cheers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,28 +23,19 @@
 			remoteGlobalIDString = D5B2E89E1C3A780C00C0327D;
 			remoteInfo = Cheers;
 		};
-		D5C6294B1C3A7FAA007F7B7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D5B2E8961C3A780C00C0327D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D5C6293F1C3A7FAA007F7B7C;
-			remoteInfo = "Cheers-Mac";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D208360F1EF7B4A4004ED8E0 /* Cheers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cheers.swift; sourceTree = "<group>"; };
 		D20836121EF7B4BB004ED8E0 /* CheerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheerTests.swift; sourceTree = "<group>"; };
+		D2F28FB71EFD0721007DD353 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D2F28FB81EFD0721007DD353 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D2F28FB91EFD0721007DD353 /* ImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
-		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Cheers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cheers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* Cheers-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cheers-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5C629401C3A7FAA007F7B7C /* Cheers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cheers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5C629491C3A7FAA007F7B7C /* Cheers-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cheers-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C6298B1C3A8BBD007F7B7C /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		D5C6298C1C3A8BBD007F7B7C /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 		D5C629901C3A8BDA007F7B7C /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		D5C629911C3A8BDA007F7B7C /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,21 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5C6293C1C3A7FAA007F7B7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C629461C3A7FAA007F7B7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5C6294A1C3A7FAA007F7B7C /* Cheers.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				D500FD111C3AABED00782D78 /* Playground-iOS.playground */,
-				D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */,
 				D5C629691C3A809D007F7B7C /* Sources */,
 				D5C6295C1C3A800E007F7B7C /* Cheers */,
 				D5C6298F1C3A8BDA007F7B7C /* CheersTests */,
@@ -98,8 +73,6 @@
 			children = (
 				D5B2E89F1C3A780C00C0327D /* Cheers.framework */,
 				D5B2E8A91C3A780C00C0327D /* Cheers-iOS-Tests.xctest */,
-				D5C629401C3A7FAA007F7B7C /* Cheers.framework */,
-				D5C629491C3A7FAA007F7B7C /* Cheers-Mac-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				D5C6298B1C3A8BBD007F7B7C /* Info-iOS.plist */,
-				D5C6298C1C3A8BBD007F7B7C /* Info-Mac.plist */,
 			);
 			path = Cheers;
 			sourceTree = "<group>";
@@ -116,6 +88,9 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D2F28FB71EFD0721007DD353 /* Config.swift */,
+				D2F28FB81EFD0721007DD353 /* Extensions.swift */,
+				D2F28FB91EFD0721007DD353 /* ImageGenerator.swift */,
 				D208360F1EF7B4A4004ED8E0 /* Cheers.swift */,
 			);
 			path = Sources;
@@ -125,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				D5C629901C3A8BDA007F7B7C /* Info-iOS.plist */,
-				D5C629911C3A8BDA007F7B7C /* Info-Mac.plist */,
 				D20836121EF7B4BB004ED8E0 /* CheerTests.swift */,
 			);
 			path = CheersTests;
@@ -135,13 +109,6 @@
 
 /* Begin PBXHeadersBuildPhase section */
 		D5B2E89C1C3A780C00C0327D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C6293D1C3A7FAA007F7B7C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,42 +154,6 @@
 			productReference = D5B2E8A91C3A780C00C0327D /* Cheers-iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D5C6293F1C3A7FAA007F7B7C /* Cheers-Mac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Cheers-Mac" */;
-			buildPhases = (
-				D5C6293B1C3A7FAA007F7B7C /* Sources */,
-				D5C6293C1C3A7FAA007F7B7C /* Frameworks */,
-				D5C6293D1C3A7FAA007F7B7C /* Headers */,
-				D5C6293E1C3A7FAA007F7B7C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Cheers-Mac";
-			productName = "Cheers-Mac";
-			productReference = D5C629401C3A7FAA007F7B7C /* Cheers.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D5C629481C3A7FAA007F7B7C /* Cheers-Mac-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Cheers-Mac-Tests" */;
-			buildPhases = (
-				D5C629451C3A7FAA007F7B7C /* Sources */,
-				D5C629461C3A7FAA007F7B7C /* Frameworks */,
-				D5C629471C3A7FAA007F7B7C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */,
-			);
-			name = "Cheers-Mac-Tests";
-			productName = "Cheers-MacTests";
-			productReference = D5C629491C3A7FAA007F7B7C /* Cheers-Mac-Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,14 +172,6 @@
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0830;
 					};
-					D5C6293F1C3A7FAA007F7B7C = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0830;
-					};
-					D5C629481C3A7FAA007F7B7C = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0830;
-					};
 				};
 			};
 			buildConfigurationList = D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Cheers" */;
@@ -264,9 +187,7 @@
 			projectRoot = "";
 			targets = (
 				D5B2E89E1C3A780C00C0327D /* Cheers-iOS */,
-				D5C6293F1C3A7FAA007F7B7C /* Cheers-Mac */,
 				D5B2E8A81C3A780C00C0327D /* Cheers-iOS-Tests */,
-				D5C629481C3A7FAA007F7B7C /* Cheers-Mac-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,20 +207,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5C6293E1C3A7FAA007F7B7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C629471C3A7FAA007F7B7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -308,6 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20836101EF7B4A4004ED8E0 /* Cheers.swift in Sources */,
+				D2F28FBE1EFD0721007DD353 /* ImageGenerator.swift in Sources */,
+				D2F28FBC1EFD0721007DD353 /* Extensions.swift in Sources */,
+				D2F28FBA1EFD0721007DD353 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,22 +229,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5C6293B1C3A7FAA007F7B7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20836111EF7B4A4004ED8E0 /* Cheers.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C629451C3A7FAA007F7B7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D20836141EF7B4BB004ED8E0 /* CheerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -342,11 +236,6 @@
 			isa = PBXTargetDependency;
 			target = D5B2E89E1C3A780C00C0327D /* Cheers-iOS */;
 			targetProxy = D5B2E8AB1C3A780C00C0327D /* PBXContainerItemProxy */;
-		};
-		D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D5C6293F1C3A7FAA007F7B7C /* Cheers-Mac */;
-			targetProxy = D5C6294B1C3A7FAA007F7B7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,96 +405,6 @@
 			};
 			name = Release;
 		};
-		D5C629521C3A7FAA007F7B7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Cheers/Info-Mac.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Cheers-Mac";
-				PRODUCT_NAME = Cheers;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		D5C629531C3A7FAA007F7B7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Cheers/Info-Mac.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Cheers-Mac";
-				PRODUCT_NAME = Cheers;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		D5C629551C3A7FAA007F7B7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/CheersTests/Info-Mac.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Cheers-MacTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		D5C629561C3A7FAA007F7B7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/CheersTests/Info-Mac.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Cheers-MacTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -632,24 +431,6 @@
 			buildConfigurations = (
 				D5B2E8B71C3A780C00C0327D /* Debug */,
 				D5B2E8B81C3A780C00C0327D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Cheers-Mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5C629521C3A7FAA007F7B7C /* Debug */,
-				D5C629531C3A7FAA007F7B7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Cheers-Mac-Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5C629551C3A7FAA007F7B7C /* Debug */,
-				D5C629561C3A7FAA007F7B7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

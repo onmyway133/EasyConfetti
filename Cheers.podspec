@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Cheers"
-  s.summary          = "A short description of Cheers."
-  s.version          = "0.1.0"
+  s.summary          = "Fancy confetti effects in Swift"
+  s.version          = "1.0.0"
   s.homepage         = "https://github.com/hyperoslo/Cheers"
   s.license          = 'MIT'
   s.author           = { "Hyper Interaktiv AS" => "ios@hyper.no" }
@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/hyperoslo'
 
   s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.9'
   s.tvos.deployment_target = '9.2'
 
   s.requires_arc = true
