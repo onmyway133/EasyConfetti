@@ -16,9 +16,9 @@ public class CheerView: UIView {
     stop()
 
     let emitter = CAEmitterLayer()
-    emitter.emitterPosition = CGPoint(x: frame.width / 2.0, y: 0)
+    emitter.emitterPosition = CGPoint(x: bounds.width / 2.0, y: 0)
     emitter.emitterShape = kCAEmitterLayerLine
-    emitter.emitterSize = CGSize(width: frame.width, height: 1)
+    emitter.emitterSize = CGSize(width: bounds.width, height: 1)
     emitter.renderMode = kCAEmitterLayerAdditive
 
     let colors = config.colors.shuffled()
@@ -26,8 +26,9 @@ public class CheerView: UIView {
 
     zip(pickImages(), colors.shuffled()).forEach { image, color in
       let cell = CAEmitterCell()
-      cell.birthRate = 10
+      cell.birthRate = 20
       cell.lifetime = 20.0
+      cell.lifetimeRange = 10
       cell.velocity = 250
       cell.velocityRange = 50
       cell.emissionLongitude = CGFloat.pi
@@ -39,6 +40,7 @@ public class CheerView: UIView {
       cell.alphaSpeed = -0.1
       cell.contents = image.cgImage
       cell.xAcceleration = 20
+      cell.yAcceleration = 50
       cell.redRange = 0.8
       cell.greenRange = 0.8
       cell.blueRange = 0.8
