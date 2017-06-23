@@ -1,27 +1,24 @@
 import XCTest
+@testable import Cheers
 
 class CheerTests: XCTestCase {
-
-  override func setUp() {
-    super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+  func testImageGenerators() {
+    let generator = ImageGenerator()
+    XCTAssertNotNil(generator.rectangle())
+    XCTAssertNotNil(generator.circle())
   }
 
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    super.tearDown()
-  }
+  func testCheerView() {
+    let parent = UIView()
+    let cheerView = CheerView()
+    parent.addSubview(cheerView)
+    XCTAssertEqual(cheerView.config.colors.count, 7)
+    XCTAssertFalse(cheerView.isUserInteractionEnabled)
 
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    XCTAssertNil(cheerView.emitter)
+    cheerView.start()
+    XCTAssertNotNil(cheerView.emitter)
+    cheerView.stop()
+    XCTAssertNotNil(cheerView.emitter)
   }
-
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    self.measure {
-      // Put the code you want to measure the time of here.
-    }
-  }
-
 }
