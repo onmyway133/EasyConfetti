@@ -7,14 +7,45 @@
 [![Platform](https://img.shields.io/cocoapods/p/Cheers.svg?style=flat)](http://cocoadocs.org/docsets/Cheers)
 ![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
 
-## Description
-
-**Cheers** description.
-
 ## Usage
 
+### Basic
+
 ```swift
-<API>
+// Create the view
+let cheerView = CheerView()
+view.addSubview(cheerView)
+
+// Configure
+cheerView.config.particle = .confetti
+
+// Start
+cheerView.start()
+
+// Stop
+cheerView.stop()
+```
+
+### Configuration
+
+Configuration will be applicated at the next `start`
+
+```
+// Use predefined confetti
+cheerView.config.particle = .confetti
+
+// Use texts
+let string = NSAttributedString(string: "❤️", attributes: [
+  NSFontAttributeName: UIFont.systemFont(ofSize: 15)
+])
+cheerView.config.particle = .text([string])
+
+// Use images
+let image = UIImage(named: "star")
+cheerView.config.particle = .image([image])
+
+// Change colors
+cheerView.config.colors = [UIColor.red, UIColor.green]
 ```
 
 ## Installation
@@ -38,6 +69,10 @@ github "hyperoslo/Cheers"
 ## Author
 
 Hyper Interaktiv AS, ios@hyper.no
+
+## Credit
+
+- Background image from the demo is from http://www.freepik.com/
 
 ## Contributing
 
