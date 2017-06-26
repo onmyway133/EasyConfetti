@@ -49,6 +49,7 @@ public class CheerView: UIView {
     }
 
     emitter.emitterCells = cells
+    emitter.beginTime = CACurrentMediaTime()
 
     layer.addSublayer(emitter)
     self.emitter = emitter
