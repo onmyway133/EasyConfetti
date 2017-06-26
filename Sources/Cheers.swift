@@ -70,8 +70,8 @@ public class CheerView: UIView {
         .flatMap({ $0 })
     case .image(let images):
       return images
-    case .text(let strings):
-      return strings.flatMap({ generator.generate(string: $0) })
+    case .text(let size, let strings):
+      return strings.flatMap({ generator.generate(size: size, string: $0) })
     }
   }
 }

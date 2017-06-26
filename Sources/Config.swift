@@ -8,7 +8,7 @@ import UIKit
 public enum Particle {
   case confetti
   case image([UIImage])
-  case text([NSAttributedString])
+  case text(CGSize, [NSAttributedString])
 }
 
 /// Used to configure CheerView

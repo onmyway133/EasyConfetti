@@ -13,10 +13,9 @@ class ImageGenerator {
     return image
   }
 
-  func generate(string: NSAttributedString) -> UIImage? {
+  func generate(size: CGSize, string: NSAttributedString) -> UIImage? {
     return generate { context in
-      let rect = CGRect(x: 0, y: 0,
-                        width: size.width, height: size.height)
+      let rect = CGRect(origin: .zero, size: size)
       context?.clear(rect)
       string.draw(in: rect)
     }
