@@ -27,6 +27,9 @@ public struct Config {
     UIColor.cyan
   ]
 
+  /// Customize the cells
+  public var customize: (([CAEmitterCell]) -> Void)?
+
   public init() {
     
   }
