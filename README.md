@@ -50,6 +50,11 @@ cheerView.config.particle = .image([image])
 
 // Change colors
 cheerView.config.colors = [UIColor.red, UIColor.green]
+
+// Customize cells
+cheerView.config.customize = { cells in
+	
+}
 ```
 
 ## Installation
