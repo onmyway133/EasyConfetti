@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Cheers"
   s.summary          = "Fancy confetti effects in Swift"
-  s.version          = "1.1.0"
+  s.version          = "1.2.0"
   s.homepage         = "https://github.com/hyperoslo/Cheers"
   s.license          = 'MIT'
   s.author           = { "Hyper Interaktiv AS" => "ios@hyper.no" }
