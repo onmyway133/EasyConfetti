@@ -41,9 +41,9 @@ public class CheerView: UIView {
       cell.contents = image.cgImage
       cell.xAcceleration = 20
       cell.yAcceleration = 50
-      cell.redRange = 0.8
-      cell.greenRange = 0.8
-      cell.blueRange = 0.8
+      cell.redRange = config.colorRange
+      cell.greenRange = config.colorRange
+      cell.blueRange = config.colorRange
 
       cells.append(cell)
     }

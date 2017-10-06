@@ -27,6 +27,12 @@ public struct Config {
     UIColor.cyan
   ]
 
+  /// The allowed "color range" for RGB values in each particle.
+  /// For example, a value of 0.8 would allow the `CAEmitterCell().redRange`, `.greenRange`, and `.blueRange` to each vary by 0.8.
+  /// If you want to tightly-specify the color of your particles, use a small value.
+  /// This can be any value between 0.0 and 1.0 — see the documentation for `CAEmitterCell().redRange` for more information.
+  public var colorRange: Float = 0.8
+
   /// Customize the cells
   public var customize: (([CAEmitterCell]) -> Void)?
 
