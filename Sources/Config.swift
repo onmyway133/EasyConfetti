@@ -6,15 +6,26 @@ import UIKit
 /// - image: An array of images
 /// - text: An array of texts
 public enum Particle {
-  case confetti
+  case confetti(allowedShapes: [ConfettiShape])
   case image([UIImage])
   case text(CGSize, [NSAttributedString])
+
+  /// The shape of a piece of confetti.
+  public enum ConfettiShape {
+    case rectangle, circle, triangle, curvedQuadrilateral
+    public static var all: [ConfettiShape] = [
+        .rectangle,
+        .circle,
+        .triangle,
+        .curvedQuadrilateral
+    ]
+  }
 }
 
 /// Used to configure CheerView
 public struct Config {
   /// Specify the particle shapes
-  public var particle: Particle = .confetti
+    public var particle: Particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
 
   /// The list of available colors. This will be shuffled
   public var colors: [UIColor] = [
