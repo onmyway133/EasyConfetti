@@ -21,10 +21,15 @@ public class CheerView: UIView {
     emitter.emitterSize = CGSize(width: bounds.width, height: 1)
     emitter.renderMode = kCAEmitterLayerAdditive
 
-    let colors = config.colors.shuffled()
-    var cells = [CAEmitterCell]()
+    // This combination will ensure that all color/image combinations are evenly distributed.
+    // For example, if you have only one color, then we still want to make sure
+    // that all "allowed" particle types are represented in the result.
+    let combinations = Array<(UIColor, UIImage)>.createAllCombinations(
+      from: config.colors,
+      and: pickImages()
+    )
 
-    zip(pickImages(), colors.shuffled()).forEach { image, color in
+    let cells: [CAEmitterCell] = combinations.reduce([]) { (accum, combination) in
       let cell = CAEmitterCell()
       cell.birthRate = 20
       cell.lifetime = 20.0
@@ -36,16 +41,16 @@ public class CheerView: UIView {
       cell.spinRange = 5
       cell.scale = 0.3
       cell.scaleRange = 0.2
-      cell.color = color.cgColor
+      cell.color = combination.0.cgColor
       cell.alphaSpeed = -0.1
-      cell.contents = image.cgImage
+      cell.contents = combination.1.cgImage
       cell.xAcceleration = 20
       cell.yAcceleration = 50
-      cell.redRange = 0.8
-      cell.greenRange = 0.8
-      cell.blueRange = 0.8
+      cell.redRange = config.colorRange
+      cell.greenRange = config.colorRange
+      cell.blueRange = config.colorRange
 
-      cells.append(cell)
+      return accum + [cell]
     }
 
     emitter.emitterCells = cells
@@ -66,10 +71,10 @@ public class CheerView: UIView {
     let generator = ImageGenerator()
 
     switch config.particle {
-    case .confetti:
-      return [generator.rectangle(), generator.circle(),
-              generator.triangle(), generator.curvedQuadrilateral()]
-        .flatMap({ $0 })
+    case .confetti(let allowedShapes):
+        return allowedShapes
+          .map { generator.confetti(shape: $0) }
+          .flatMap({ $0 })
     case .image(let images):
       return images
     case .text(let size, let strings):
