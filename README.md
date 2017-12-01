@@ -20,7 +20,7 @@ let cheerView = CheerView()
 view.addSubview(cheerView)
 
 // Configure
-cheerView.config.particle = .confetti
+cheerView.config.particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
 
 // Start
 cheerView.start()
@@ -35,7 +35,7 @@ Configuration will be applied at the next `start`
 
 ```swift
 // Use predefined confetti
-cheerView.config.particle = .confetti
+cheerView.config.particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
 
 // Use texts
 let string = NSAttributedString(string: "❤️", attributes: [
@@ -52,7 +52,7 @@ cheerView.config.colors = [UIColor.red, UIColor.green]
 
 // Customize cells
 cheerView.config.customize = { cells in
-	
+
 }
 ```
 
