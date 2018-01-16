@@ -1,5 +1,5 @@
 PODS:
-  - Cheers (0.1.0)
+  - Cheers (2.0.0)
 
 DEPENDENCIES:
   - Cheers (from `../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  Cheers: eb2a513bd7fbc89b9b34017b7456473402eeca16
+  Cheers: df4128f342df005e53ccbba971a0bdfb5d735f6d
 
 PODFILE CHECKSUM: 5e6d52651a9c11cd39c5d53c6768b84685a3eb28
 
