@@ -2,7 +2,7 @@ import UIKit
 
 /// The view to show particles
 open class CheerView: UIView {
-  public var config = Config()
+  open var config = Config()
   var emitter: CAEmitterLayer?
 
   open override func didMoveToSuperview() {
@@ -12,7 +12,7 @@ open class CheerView: UIView {
   }
 
   /// Start animation
-  public func start() {
+  open func start() {
     stop()
 
     let emitter = CAEmitterLayer()
@@ -63,7 +63,7 @@ open class CheerView: UIView {
   }
 
   /// Stop animation
-  public func stop() {
+  open func stop() {
     emitter?.birthRate = 0
   }
 
