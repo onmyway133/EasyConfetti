@@ -5,7 +5,7 @@ open class CheerView: UIView {
   public var config = Config()
   var emitter: CAEmitterLayer?
 
-  public override func didMoveToSuperview() {
+  open override func didMoveToSuperview() {
     super.didMoveToSuperview()
 
     isUserInteractionEnabled = false
