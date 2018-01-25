@@ -1,7 +1,7 @@
 import UIKit
 
 /// The view to show particles
-public class CheerView: UIView {
+open class CheerView: UIView {
   public var config = Config()
   var emitter: CAEmitterLayer?
 
