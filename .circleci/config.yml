@@ -3,9 +3,10 @@ jobs:
   build-and-test:
     macos:
       xcode: "9.3.0"
+    shell: /bin/bash --login -o pipefail
     steps:
       - checkout
-      - run: - set -o pipefail && xcodebuild -project Cheers.xcodeproj -scheme "Cheers-iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=10.0' -enableCodeCoverage YES test
+      - run: xcodebuild -project Cheers.xcodeproj -scheme "Cheers-iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=10.0' -enableCodeCoverage YES test
 
 workflows:
   version: 2
