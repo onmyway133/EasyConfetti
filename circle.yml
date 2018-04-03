@@ -1,6 +1,5 @@
-machine:
-  xcode:
-    version: "9.0"
+macos:
+  xcode: "9.3.0"
 
 test:
   override:
