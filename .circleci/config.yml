@@ -6,3 +6,9 @@ jobs:
     steps:
       - checkout
       - run: - set -o pipefail && xcodebuild -project Cheers.xcodeproj -scheme "Cheers-iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=10.0' -enableCodeCoverage YES test
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build-and-test      
