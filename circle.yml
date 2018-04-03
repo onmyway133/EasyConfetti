@@ -3,4 +3,4 @@ macos:
 
 test:
   override:
-    - set -o pipefail && xcodebuild -project Cheers.xcodeproj -scheme "Cheers-iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.0' -enableCodeCoverage YES test
+    - set -o pipefail && xcodebuild -project Cheers.xcodeproj -scheme "Cheers-iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=10.0' -enableCodeCoverage YES test
