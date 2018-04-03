@@ -74,11 +74,11 @@ open class CheerView: UIView {
     case .confetti(let allowedShapes):
         return allowedShapes
           .map { generator.confetti(shape: $0) }
-          .flatMap({ $0 })
+          .compactMap({ $0 })
     case .image(let images):
       return images
     case .text(let size, let strings):
-      return strings.flatMap({ generator.generate(size: size, string: $0) })
+      return strings.compactMap({ generator.generate(size: size, string: $0) })
     }
   }
 }
