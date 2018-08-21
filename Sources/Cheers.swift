@@ -17,9 +17,9 @@ open class CheerView: UIView {
 
     let emitter = CAEmitterLayer()
     emitter.emitterPosition = CGPoint(x: bounds.width / 2.0, y: 0)
-    emitter.emitterShape = kCAEmitterLayerLine
+    emitter.emitterShape = CAEmitterLayerEmitterShape.line
     emitter.emitterSize = CGSize(width: bounds.width, height: 1)
-    emitter.renderMode = kCAEmitterLayerAdditive
+    emitter.renderMode = CAEmitterLayerRenderMode.additive
 
     // This combination will ensure that all color/image combinations are evenly distributed.
     // For example, if you have only one color, then we still want to make sure
