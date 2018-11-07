@@ -11,11 +11,13 @@ Pod::Spec.new do |s|
   }
   s.social_media_url = 'https://twitter.com/hyperoslo'
 
+  s.macos.deployment_target = '10.13'
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.2'
 
   s.requires_arc = true
-  s.source_files = 'Sources/**/*'
+  s.source_files = 'Sources/Common/**/*'
+  s.osx.source_files = 'Sources/macOS/**/*'
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
 end

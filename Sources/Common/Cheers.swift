@@ -1,22 +1,42 @@
+#if os(OSX)
+import AppKit
+#else
 import UIKit
+#endif
+
 
 /// The view to show particles
 open class CheerView: UIView {
   open var config = Config()
   var emitter: CAEmitterLayer?
 
+  #if os(OSX)
+  open override func viewDidMoveToSuperview() {
+    super.viewDidMoveToSuperview()
+    
+    wantsLayer = true
+  }
+  #else
   open override func didMoveToSuperview() {
     super.didMoveToSuperview()
-
+    
     isUserInteractionEnabled = false
   }
+  #endif
 
   /// Start animation
   open func start() {
     stop()
 
+    var yOrigin: CGFloat = 0
+    var yMultiplier: CGFloat = 1
+    #if os(OSX)
+    yOrigin = bounds.height
+    yMultiplier = -1
+    #endif
+    
     let emitter = CAEmitterLayer()
-    emitter.emitterPosition = CGPoint(x: bounds.width / 2.0, y: 0)
+    emitter.emitterPosition = CGPoint(x: bounds.width / 2, y: yOrigin)
     emitter.emitterShape = CAEmitterLayerEmitterShape.line
     emitter.emitterSize = CGSize(width: bounds.width, height: 1)
     emitter.renderMode = CAEmitterLayerRenderMode.additive
@@ -34,7 +54,7 @@ open class CheerView: UIView {
       cell.birthRate = 20
       cell.lifetime = 20.0
       cell.lifetimeRange = 10
-      cell.velocity = 250
+      cell.velocity = 250 * yMultiplier
       cell.velocityRange = 50
       cell.emissionLongitude = CGFloat.pi
       cell.emissionRange = CGFloat.pi * 0.2
@@ -45,7 +65,7 @@ open class CheerView: UIView {
       cell.alphaSpeed = -0.1
       cell.contents = combination.1.cgImage
       cell.xAcceleration = 20
-      cell.yAcceleration = 50
+      cell.yAcceleration = 50 * yMultiplier
       cell.redRange = config.colorRange
       cell.greenRange = config.colorRange
       cell.blueRange = config.colorRange
@@ -58,7 +78,9 @@ open class CheerView: UIView {
 
     config.customize?(cells)
 
-    layer.addSublayer(emitter)
+    let rootLayer: CALayer? = layer
+    rootLayer?.addSublayer(emitter)
+    
     self.emitter = emitter
   }
 
