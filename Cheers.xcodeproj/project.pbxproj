@@ -32,8 +32,6 @@
 
 /* Begin PBXFileReference section */
 		B5A339E12193277C006A5DB1 /* Cheers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cheers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5A339E32193277C006A5DB1 /* Cheers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cheers.h; sourceTree = "<group>"; };
-		B5A339E42193277C006A5DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A339ED219327D9006A5DB1 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		B5A339EF219328FE006A5DB1 /* Cocoa+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cocoa+Helpers.swift"; sourceTree = "<group>"; };
 		D208360F1EF7B4A4004ED8E0 /* Cheers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cheers.swift; sourceTree = "<group>"; };
@@ -74,15 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B5A339E22193277C006A5DB1 /* Cheers */ = {
-			isa = PBXGroup;
-			children = (
-				B5A339E32193277C006A5DB1 /* Cheers.h */,
-				B5A339E42193277C006A5DB1 /* Info.plist */,
-			);
-			path = Cheers;
-			sourceTree = "<group>";
-		};
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +79,6 @@
 				D5C629691C3A809D007F7B7C /* Sources */,
 				D5C6295C1C3A800E007F7B7C /* Cheers */,
 				D5C6298F1C3A8BDA007F7B7C /* CheersTests */,
-				B5A339E22193277C006A5DB1 /* Cheers */,
 				D5B2E8A01C3A780C00C0327D /* Products */,
 			);
 			sourceTree = "<group>";
