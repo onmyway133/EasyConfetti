@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5A339E9219327A7006A5DB1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F28FB71EFD0721007DD353 /* Config.swift */; };
-		B5A339EA219327A9006A5DB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F28FB81EFD0721007DD353 /* Extensions.swift */; };
-		B5A339EB219327AC006A5DB1 /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F28FB91EFD0721007DD353 /* ImageGenerator.swift */; };
-		B5A339EC219327AE006A5DB1 /* Cheers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208360F1EF7B4A4004ED8E0 /* Cheers.swift */; };
-		B5A339F0219328FF006A5DB1 /* Cocoa+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339EF219328FE006A5DB1 /* Cocoa+Helpers.swift */; };
-		D20836101EF7B4A4004ED8E0 /* Cheers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208360F1EF7B4A4004ED8E0 /* Cheers.swift */; };
+		B5A339FD219332C2006A5DB1 /* Cheers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339F7219332C2006A5DB1 /* Cheers.swift */; };
+		B5A339FE219332C2006A5DB1 /* Cheers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339F7219332C2006A5DB1 /* Cheers.swift */; };
+		B5A339FF219332C2006A5DB1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339F8219332C2006A5DB1 /* Config.swift */; };
+		B5A33A00219332C2006A5DB1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339F8219332C2006A5DB1 /* Config.swift */; };
+		B5A33A01219332C2006A5DB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339F9219332C2006A5DB1 /* Extensions.swift */; };
+		B5A33A02219332C2006A5DB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339F9219332C2006A5DB1 /* Extensions.swift */; };
+		B5A33A03219332C2006A5DB1 /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339FA219332C2006A5DB1 /* ImageGenerator.swift */; };
+		B5A33A04219332C2006A5DB1 /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339FA219332C2006A5DB1 /* ImageGenerator.swift */; };
+		B5A33A06219332C2006A5DB1 /* Cocoa+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A339FC219332C2006A5DB1 /* Cocoa+Helpers.swift */; };
 		D20836131EF7B4BB004ED8E0 /* CheerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20836121EF7B4BB004ED8E0 /* CheerTests.swift */; };
-		D2F28FBA1EFD0721007DD353 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F28FB71EFD0721007DD353 /* Config.swift */; };
-		D2F28FBC1EFD0721007DD353 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F28FB81EFD0721007DD353 /* Extensions.swift */; };
-		D2F28FBE1EFD0721007DD353 /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F28FB91EFD0721007DD353 /* ImageGenerator.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Cheers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Cheers.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,12 +33,12 @@
 /* Begin PBXFileReference section */
 		B5A339E12193277C006A5DB1 /* Cheers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cheers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A339ED219327D9006A5DB1 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
-		B5A339EF219328FE006A5DB1 /* Cocoa+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cocoa+Helpers.swift"; sourceTree = "<group>"; };
-		D208360F1EF7B4A4004ED8E0 /* Cheers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cheers.swift; sourceTree = "<group>"; };
+		B5A339F7219332C2006A5DB1 /* Cheers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cheers.swift; sourceTree = "<group>"; };
+		B5A339F8219332C2006A5DB1 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B5A339F9219332C2006A5DB1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B5A339FA219332C2006A5DB1 /* ImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
+		B5A339FC219332C2006A5DB1 /* Cocoa+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cocoa+Helpers.swift"; sourceTree = "<group>"; };
 		D20836121EF7B4BB004ED8E0 /* CheerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheerTests.swift; sourceTree = "<group>"; };
-		D2F28FB71EFD0721007DD353 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		D2F28FB81EFD0721007DD353 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		D2F28FB91EFD0721007DD353 /* ImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Cheers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cheers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* Cheers-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cheers-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +72,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5A339F6219332C2006A5DB1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B5A339F7219332C2006A5DB1 /* Cheers.swift */,
+				B5A339F8219332C2006A5DB1 /* Config.swift */,
+				B5A339F9219332C2006A5DB1 /* Extensions.swift */,
+				B5A339FA219332C2006A5DB1 /* ImageGenerator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B5A339FB219332C2006A5DB1 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B5A339FC219332C2006A5DB1 /* Cocoa+Helpers.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
@@ -105,11 +124,8 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D2F28FB71EFD0721007DD353 /* Config.swift */,
-				D2F28FB81EFD0721007DD353 /* Extensions.swift */,
-				D2F28FB91EFD0721007DD353 /* ImageGenerator.swift */,
-				D208360F1EF7B4A4004ED8E0 /* Cheers.swift */,
-				B5A339EF219328FE006A5DB1 /* Cocoa+Helpers.swift */,
+				B5A339F6219332C2006A5DB1 /* Common */,
+				B5A339FB219332C2006A5DB1 /* macOS */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -269,11 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A339E9219327A7006A5DB1 /* Config.swift in Sources */,
-				B5A339F0219328FF006A5DB1 /* Cocoa+Helpers.swift in Sources */,
-				B5A339EC219327AE006A5DB1 /* Cheers.swift in Sources */,
-				B5A339EB219327AC006A5DB1 /* ImageGenerator.swift in Sources */,
-				B5A339EA219327A9006A5DB1 /* Extensions.swift in Sources */,
+				B5A339FE219332C2006A5DB1 /* Cheers.swift in Sources */,
+				B5A33A06219332C2006A5DB1 /* Cocoa+Helpers.swift in Sources */,
+				B5A33A04219332C2006A5DB1 /* ImageGenerator.swift in Sources */,
+				B5A33A02219332C2006A5DB1 /* Extensions.swift in Sources */,
+				B5A33A00219332C2006A5DB1 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20836101EF7B4A4004ED8E0 /* Cheers.swift in Sources */,
-				D2F28FBE1EFD0721007DD353 /* ImageGenerator.swift in Sources */,
-				D2F28FBC1EFD0721007DD353 /* Extensions.swift in Sources */,
-				D2F28FBA1EFD0721007DD353 /* Config.swift in Sources */,
+				B5A339FD219332C2006A5DB1 /* Cheers.swift in Sources */,
+				B5A33A03219332C2006A5DB1 /* ImageGenerator.swift in Sources */,
+				B5A33A01219332C2006A5DB1 /* Extensions.swift in Sources */,
+				B5A339FF219332C2006A5DB1 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
