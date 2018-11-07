@@ -1,8 +1,12 @@
 use_frameworks!
 
-platform :ios, '8.0'
+target 'CheersDemo-iOS' do
+  platform :ios, '8.0'
+  pod 'Cheers', path: '../../'
+end
 
-target 'CheersDemo' do
- pod 'Cheers', path: '../../'
+target 'CheersDemo-macOS' do
+  platform :macos, '10.13'
+  pod 'Cheers', path: '../../'
 end
 
