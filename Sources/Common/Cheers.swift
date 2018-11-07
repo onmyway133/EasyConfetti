@@ -10,7 +10,7 @@ open class CheerView: UIView {
   open var config = Config()
   var emitter: CAEmitterLayer?
 
-  #if os(macOS)
+  #if os(OSX)
   open override func viewDidMoveToSuperview() {
     super.viewDidMoveToSuperview()
     
@@ -28,8 +28,13 @@ open class CheerView: UIView {
   open func start() {
     stop()
 
+    var yOrigin: CGFloat = 0
+    #if os(OSX)
+    yOrigin = bounds.height
+    #endif
+    
     let emitter = CAEmitterLayer()
-    emitter.emitterPosition = CGPoint(x: bounds.width / 2.0, y: 0)
+    emitter.emitterPosition = CGPoint(x: bounds.width / 2.0, y: yOrigin)
     emitter.emitterShape = CAEmitterLayerEmitterShape.line
     emitter.emitterSize = CGSize(width: bounds.width, height: 1)
     emitter.renderMode = CAEmitterLayerRenderMode.additive
