@@ -1,15 +1,28 @@
+#if os(OSX)
+import AppKit
+#else
 import UIKit
+#endif
+
 
 /// The view to show particles
 open class CheerView: UIView {
   open var config = Config()
   var emitter: CAEmitterLayer?
 
+  #if os(macOS)
+  open override func viewDidMoveToSuperview() {
+    super.viewDidMoveToSuperview()
+    
+    wantsLayer = true
+  }
+  #else
   open override func didMoveToSuperview() {
     super.didMoveToSuperview()
-
+    
     isUserInteractionEnabled = false
   }
+  #endif
 
   /// Start animation
   open func start() {
@@ -58,7 +71,9 @@ open class CheerView: UIView {
 
     config.customize?(cells)
 
-    layer.addSublayer(emitter)
+    let rootLayer: CALayer? = layer
+    rootLayer?.addSublayer(emitter)
+    
     self.emitter = emitter
   }
 
