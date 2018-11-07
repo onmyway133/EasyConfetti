@@ -22,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B521A2EA46EEFC5EEA77CDC /* Pods-CheersDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo/Pods-CheersDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1E7FB9C00B62577CD3A89BBE /* Pods-CheersDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		263978C0B6DEE64C024C721B /* Pods_CheersDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheersDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		582AEBA1ADA8BA6F5CE8ED11 /* Pods-CheersDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,7 +34,6 @@
 		B5A33A292193378E006A5DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5A33A2C2193378E006A5DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B5A33A3721933939006A5DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7ED1DC8C014FA3815149A06 /* Pods-CheersDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo/Pods-CheersDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D21B44C31EFC0E7000BC9261 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D28333BF1EFAC4E800969809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C7F7401C3BC9CE008CDDBA /* CheersDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CheersDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,8 +68,6 @@
 		238D5F63B48EC252704A5896 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B7ED1DC8C014FA3815149A06 /* Pods-CheersDemo.debug.xcconfig */,
-				1B521A2EA46EEFC5EEA77CDC /* Pods-CheersDemo.release.xcconfig */,
 				1E7FB9C00B62577CD3A89BBE /* Pods-CheersDemo-iOS.debug.xcconfig */,
 				582AEBA1ADA8BA6F5CE8ED11 /* Pods-CheersDemo-iOS.release.xcconfig */,
 				6EEDB20AC472D48CD937E393 /* Pods-CheersDemo-macOS.debug.xcconfig */,
@@ -236,7 +232,6 @@
 				TargetAttributes = {
 					B5A33A242193378D006A5DB1 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = RVZKP45394;
 						ProvisioningStyle = Manual;
 					};
 					D5C7F73F1C3BC9CE008CDDBA = {
@@ -426,7 +421,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = RVZKP45394;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/CheersDemo-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -457,7 +452,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = RVZKP45394;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/CheersDemo-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
