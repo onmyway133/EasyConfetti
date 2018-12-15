@@ -76,10 +76,11 @@ github "hyperoslo/Cheers"
 
 ## Author
 
-Hyper Interaktiv AS, ios@hyper.no
+- Khoa Pham, onmyway133@gmai.com
 
 ## Credit
 
+- Hyper Interaktiv AS, ios@hyper.no
 - Background image in the demo is from http://www.freepik.com/
 
 ## Contributing
