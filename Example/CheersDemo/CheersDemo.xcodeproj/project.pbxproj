@@ -7,33 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5819137E97EB200F3F012FEF /* Pods_CheersDemo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F57A267A5ED6C884FDB7AD /* Pods_CheersDemo_iOS.framework */; };
-		69731E432382F7C945D51C18 /* Pods_CheersDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263978C0B6DEE64C024C721B /* Pods_CheersDemo.framework */; };
+		5C7B6E50ABC8EB038329AFCC /* Pods_CheersDemo_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4D88B0AB00C2FD4EB0B20F /* Pods_CheersDemo_macOS.framework */; };
 		B5A33A282193378D006A5DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A33A272193378D006A5DB1 /* AppDelegate.swift */; };
 		B5A33A2A2193378E006A5DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A33A292193378E006A5DB1 /* Assets.xcassets */; };
 		B5A33A2D2193378E006A5DB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A33A2B2193378E006A5DB1 /* MainMenu.xib */; };
-		C04DE1E9E4C706D3933D7510 /* Pods_CheersDemo_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710B4CFA7A1E4278228CD031 /* Pods_CheersDemo_macOS.framework */; };
 		D28333C11EFAC4E800969809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28333BF1EFAC4E800969809 /* Assets.xcassets */; };
 		D2CD7C7F1EFC1360005123AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21B44C31EFC0E7000BC9261 /* Main.storyboard */; };
 		D5C7F74E1C3BC9CE008CDDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F74C1C3BC9CE008CDDBA /* LaunchScreen.storyboard */; };
 		D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */; };
 		D5C7F75C1C3BCA1E008CDDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */; };
 		D5C7F75D1C3BCA1E008CDDBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */; };
+		F652412662305FEEDB105B98 /* Pods_CheersDemo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75DAB0793F024CDC074B5A6 /* Pods_CheersDemo_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E7FB9C00B62577CD3A89BBE /* Pods-CheersDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		263978C0B6DEE64C024C721B /* Pods_CheersDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheersDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		582AEBA1ADA8BA6F5CE8ED11 /* Pods-CheersDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		6EEDB20AC472D48CD937E393 /* Pods-CheersDemo-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo-macOS/Pods-CheersDemo-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		710B4CFA7A1E4278228CD031 /* Pods_CheersDemo_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheersDemo_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94F57A267A5ED6C884FDB7AD /* Pods_CheersDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheersDemo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACE30A9C4CA9C4FEF5C99C30 /* Pods-CheersDemo-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheersDemo-macOS/Pods-CheersDemo-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		0A45BBDBCCDD458D206B1646 /* Pods-CheersDemo-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-macOS.debug.xcconfig"; path = "Target Support Files/Pods-CheersDemo-macOS/Pods-CheersDemo-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		63D20885F09090602B4C4E78 /* Pods-CheersDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-iOS.release.xcconfig"; path = "Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8D99ED510493217744846D6F /* Pods-CheersDemo-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-macOS.release.xcconfig"; path = "Target Support Files/Pods-CheersDemo-macOS/Pods-CheersDemo-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		B5A33A252193378D006A5DB1 /* CheersDemo-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CheersDemo-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A33A272193378D006A5DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A33A292193378E006A5DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5A33A2C2193378E006A5DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B5A33A3721933939006A5DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1C682AC0C1D61284A00012 /* Pods-CheersDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheersDemo-iOS.debug.xcconfig"; path = "Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D21B44C31EFC0E7000BC9261 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D28333BF1EFAC4E800969809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C7F7401C3BC9CE008CDDBA /* CheersDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CheersDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +38,8 @@
 		D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D75DAB0793F024CDC074B5A6 /* Pods_CheersDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheersDemo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4D88B0AB00C2FD4EB0B20F /* Pods_CheersDemo_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheersDemo_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C04DE1E9E4C706D3933D7510 /* Pods_CheersDemo_macOS.framework in Frameworks */,
+				5C7B6E50ABC8EB038329AFCC /* Pods_CheersDemo_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,33 +55,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69731E432382F7C945D51C18 /* Pods_CheersDemo.framework in Frameworks */,
-				5819137E97EB200F3F012FEF /* Pods_CheersDemo_iOS.framework in Frameworks */,
+				F652412662305FEEDB105B98 /* Pods_CheersDemo_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		238D5F63B48EC252704A5896 /* Pods */ = {
+		3F2A11C1053634EC7B076218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E7FB9C00B62577CD3A89BBE /* Pods-CheersDemo-iOS.debug.xcconfig */,
-				582AEBA1ADA8BA6F5CE8ED11 /* Pods-CheersDemo-iOS.release.xcconfig */,
-				6EEDB20AC472D48CD937E393 /* Pods-CheersDemo-macOS.debug.xcconfig */,
-				ACE30A9C4CA9C4FEF5C99C30 /* Pods-CheersDemo-macOS.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5C187240D2FA11BDE7E32D19 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				263978C0B6DEE64C024C721B /* Pods_CheersDemo.framework */,
-				94F57A267A5ED6C884FDB7AD /* Pods_CheersDemo_iOS.framework */,
-				710B4CFA7A1E4278228CD031 /* Pods_CheersDemo_macOS.framework */,
+				D75DAB0793F024CDC074B5A6 /* Pods_CheersDemo_iOS.framework */,
+				ED4D88B0AB00C2FD4EB0B20F /* Pods_CheersDemo_macOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AD1F00CA44712BF42F9C10E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C682AC0C1D61284A00012 /* Pods-CheersDemo-iOS.debug.xcconfig */,
+				63D20885F09090602B4C4E78 /* Pods-CheersDemo-iOS.release.xcconfig */,
+				0A45BBDBCCDD458D206B1646 /* Pods-CheersDemo-macOS.debug.xcconfig */,
+				8D99ED510493217744846D6F /* Pods-CheersDemo-macOS.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		B5A33A262193378D006A5DB1 /* CheersDemo-macOS */ = {
@@ -127,8 +123,8 @@
 				D5C7F7421C3BC9CE008CDDBA /* CheersDemo-iOS */,
 				B5A33A262193378D006A5DB1 /* CheersDemo-macOS */,
 				D5C7F7411C3BC9CE008CDDBA /* Products */,
-				238D5F63B48EC252704A5896 /* Pods */,
-				5C187240D2FA11BDE7E32D19 /* Frameworks */,
+				6AD1F00CA44712BF42F9C10E /* Pods */,
+				3F2A11C1053634EC7B076218 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,11 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5A33A302193378E006A5DB1 /* Build configuration list for PBXNativeTarget "CheersDemo-macOS" */;
 			buildPhases = (
-				15EB0E32843B41058A9F06DC /* [CP] Check Pods Manifest.lock */,
+				024F74B380877FCDAD02C25C /* [CP] Check Pods Manifest.lock */,
 				B5A33A212193378D006A5DB1 /* Sources */,
 				B5A33A222193378D006A5DB1 /* Frameworks */,
 				B5A33A232193378D006A5DB1 /* Resources */,
-				4B8C3E854BBC8DB9C5AA6FDD /* [CP] Embed Pods Frameworks */,
+				E96E13B99444C2314DB3401C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,11 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5C7F7521C3BC9CE008CDDBA /* Build configuration list for PBXNativeTarget "CheersDemo-iOS" */;
 			buildPhases = (
-				0F658CD003FB77BE6080DFDD /* [CP] Check Pods Manifest.lock */,
+				9B61B8646477A41B69C4159C /* [CP] Check Pods Manifest.lock */,
 				D5C7F73C1C3BC9CE008CDDBA /* Sources */,
 				D5C7F73D1C3BC9CE008CDDBA /* Frameworks */,
 				D5C7F73E1C3BC9CE008CDDBA /* Resources */,
-				881F8CDB71C81764DEB2EBE4 /* [CP] Embed Pods Frameworks */,
+				7DB5B7F1FD89BE575DBE6BF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,7 +223,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Hyper Interaktiv AS";
 				TargetAttributes = {
 					B5A33A242193378D006A5DB1 = {
@@ -284,25 +280,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F658CD003FB77BE6080DFDD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CheersDemo-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		15EB0E32843B41058A9F06DC /* [CP] Check Pods Manifest.lock */ = {
+		024F74B380877FCDAD02C25C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,7 +302,51 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4B8C3E854BBC8DB9C5AA6FDD /* [CP] Embed Pods Frameworks */ = {
+		7DB5B7F1FD89BE575DBE6BF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cheers-iOS/Cheers.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cheers.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B61B8646477A41B69C4159C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheersDemo-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E96E13B99444C2314DB3401C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,24 +366,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheersDemo-macOS/Pods-CheersDemo-macOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		881F8CDB71C81764DEB2EBE4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Cheers-iOS/Cheers.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cheers.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheersDemo-iOS/Pods-CheersDemo-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -408,7 +412,7 @@
 /* Begin XCBuildConfiguration section */
 		B5A33A312193378E006A5DB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EEDB20AC472D48CD937E393 /* Pods-CheersDemo-macOS.debug.xcconfig */;
+			baseConfigurationReference = 0A45BBDBCCDD458D206B1646 /* Pods-CheersDemo-macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -418,7 +422,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -433,13 +437,12 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		B5A33A322193378E006A5DB1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACE30A9C4CA9C4FEF5C99C30 /* Pods-CheersDemo-macOS.release.xcconfig */;
+			baseConfigurationReference = 8D99ED510493217744846D6F /* Pods-CheersDemo-macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -449,7 +452,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -462,7 +465,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -517,6 +519,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -564,13 +568,15 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		D5C7F7531C3BC9CE008CDDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E7FB9C00B62577CD3A89BBE /* Pods-CheersDemo-iOS.debug.xcconfig */;
+			baseConfigurationReference = CE1C682AC0C1D61284A00012 /* Pods-CheersDemo-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -580,13 +586,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.CheersDemo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D5C7F7541C3BC9CE008CDDBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 582AEBA1ADA8BA6F5CE8ED11 /* Pods-CheersDemo-iOS.release.xcconfig */;
+			baseConfigurationReference = 63D20885F09090602B4C4E78 /* Pods-CheersDemo-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -596,7 +601,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.CheersDemo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
