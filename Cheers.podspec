@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name             = "Cheers"
   s.summary          = "Fancy confetti effects in Swift"
-  s.version          = "2.1.0"
-  s.homepage         = "https://github.com/hyperoslo/Cheers"
+  s.version          = "2.2.0"
+  s.homepage         = "https://github.com/onmyway133/Cheers"
   s.license          = 'MIT'
-  s.author           = { "Hyper Interaktiv AS" => "ios@hyper.no" }
+  s.author           = { "Khoa Pham" => "onmyway133@gmail.com" }
   s.source           = {
-    :git => "https://github.com/hyperoslo/Cheers.git",
+    :git => "https://github.com/onmyway133/Cheers.git",
     :tag => s.version.to_s
   }
-  s.social_media_url = 'https://twitter.com/hyperoslo'
+  s.social_media_url = 'https://twitter.com/onmyway133'
 
   s.macos.deployment_target = '10.13'
   s.ios.deployment_target = '8.0'
@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/Common/**/*'
   s.osx.source_files = 'Sources/macOS/**/*'
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 end

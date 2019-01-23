@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B5A339E02193277C006A5DB1"
-               BuildableName = "Cheers_macOS.framework"
+               BuildableName = "Cheers.framework"
                BlueprintName = "Cheers-macOS"
                ReferencedContainer = "container:Cheers.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B5A339E02193277C006A5DB1"
-            BuildableName = "Cheers_macOS.framework"
+            BuildableName = "Cheers.framework"
             BlueprintName = "Cheers-macOS"
             ReferencedContainer = "container:Cheers.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B5A339E02193277C006A5DB1"
-            BuildableName = "Cheers_macOS.framework"
+            BuildableName = "Cheers.framework"
             BlueprintName = "Cheers-macOS"
             ReferencedContainer = "container:Cheers.xcodeproj">
          </BuildableReference>
