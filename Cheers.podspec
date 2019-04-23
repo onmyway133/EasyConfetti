@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Cheers"
   s.summary          = "Fancy confetti effects in Swift"
-  s.version          = "2.2.0"
+  s.version          = "2.3.0"
   s.homepage         = "https://github.com/onmyway133/Cheers"
   s.license          = 'MIT'
   s.author           = { "Khoa Pham" => "onmyway133@gmail.com" }
@@ -18,6 +18,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Sources/Common/**/*'
   s.osx.source_files = 'Sources/macOS/**/*'
-
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+  s.swift_version = '5.0'
 end
