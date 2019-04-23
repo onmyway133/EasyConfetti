@@ -49,9 +49,12 @@ open class CheerView: UIView {
       and: pickImages()
     )
 
+    let beginTime = CACurrentMediaTime()
+
     let cells: [CAEmitterCell] = combinations.reduce([]) { (accum, combination) in
       let cell = CAEmitterCell()
       cell.birthRate = 20
+      cell.beginTime = beginTime
       cell.lifetime = 20.0
       cell.lifetimeRange = 10
       cell.velocity = 250 * yMultiplier
@@ -74,7 +77,6 @@ open class CheerView: UIView {
     }
 
     emitter.emitterCells = cells
-    emitter.beginTime = CACurrentMediaTime()
 
     config.customize?(cells)
 
