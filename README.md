@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/Cheers.svg?style=flat)](http://cocoadocs.org/docsets/Cheers)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
 [![License](https://img.shields.io/cocoapods/l/Cheers.svg?style=flat)](http://cocoadocs.org/docsets/Cheers)
 [![Platform](https://img.shields.io/cocoapods/p/Cheers.svg?style=flat)](http://cocoadocs.org/docsets/Cheers)
 ![Swift](https://img.shields.io/badge/%20in-swift%204.1-orange.svg)
@@ -70,6 +71,24 @@ To install just write into your Cartfile:
 
 ```ruby
 github "hyperoslo/Cheers"
+```
+
+**Cheers** is also available through [Accio](https://github.com/JamitLabs/Accio).
+To install just write into your Package.swift:
+
+```swift
+.package(url: "https://github.com/onmyway133/Cheers.git", .upToNextMajor(from: "2.3.0")),
+```
+
+Then link `Cheers` in your App target like so:
+
+```swift
+.target(
+    name: "App",
+    dependencies: [
+        "Cheers",
+    ]
+),
 ```
 
 **Cheers** can also be installed manually. Just download and drop `Sources` folders in your project.
