@@ -1,5 +1,5 @@
 //
-//  Config.swift
+//  Configuration.swift
 //  EasyConfetti
 //
 //  Created by khoa on 8/12/2021.
@@ -34,7 +34,7 @@ public enum Particle {
 }
 
 /// Used to configure ConfettiView
-public struct Config {
+public struct Configuration {
     /// Specify the particle shapes
     public var particle: Particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
 
@@ -58,7 +58,5 @@ public struct Config {
     /// Customize the cells
     public var customize: (([CAEmitterCell]) -> Void)?
 
-    public init() {
-
-    }
+    public init() {}
 }

@@ -13,7 +13,7 @@ import UIKit
 
 /// The view to show particles
 public class ConfettiView: UIView {
-    public var config = Config()
+    public var config = Configuration()
     var emitter: CAEmitterLayer?
     
 #if os(OSX)
