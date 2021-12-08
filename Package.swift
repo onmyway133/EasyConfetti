@@ -1,16 +1,24 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.3
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
 let package = Package(
-    name: "Cheers",
-    // platforms: [.iOS("8.0"), .macOS("10.13"), .tvOS("9.2")],
+    name: "EasyConfetti",
+    platforms: [
+        .macOS(.v11),
+        .iOS(.v13),
+        .tvOS(.v13)
+    ],
     products: [
-        .library(name: "Cheers", targets: ["Cheers"])
+        .library(
+            name: "EasyConfetti",
+            targets: ["EasyConfetti"]),
     ],
     targets: [
         .target(
-            name: "Cheers",
-            path: "Sources/Common"
+            name: "EasyConfetti",
+            path: "Sources"
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

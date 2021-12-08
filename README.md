@@ -1,4 +1,4 @@
-# Cheers
+# EasyConfetti
 
 <a href="https://www.buymeacoffee.com/onmyway133"> 
     <img alt="Buy Me A Coffee" src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" style="height: auto !important; width: auto !important;" /> 
@@ -8,18 +8,9 @@
 
 - [Push Hero - pure Swift native macOS application to test push notifications](https://onmyway133.com/pushhero)
 - [PastePal - Pasteboard, note and shortcut manager](https://onmyway133.com/pastepal)
-- [Quick Check - smart todo manager](https://onmyway133.com/quickcheck)
-- [Alias - App and file shortcut manager](https://onmyway133.com/alias)
 - [My other apps](https://onmyway133.com/apps/)
 
 ❤️❤️😇😍🤘❤️❤️
-
-[![Version](https://img.shields.io/cocoapods/v/Cheers.svg?style=flat)](http://cocoadocs.org/docsets/Cheers)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
-[![License](https://img.shields.io/cocoapods/l/Cheers.svg?style=flat)](http://cocoadocs.org/docsets/Cheers)
-[![Platform](https://img.shields.io/cocoapods/p/Cheers.svg?style=flat)](http://cocoadocs.org/docsets/Cheers)
-![Swift](https://img.shields.io/badge/%20in-swift%204.1-orange.svg)
 
 <div align = "center">
 <img src="demo.gif" width="300" height="510" />
@@ -31,17 +22,17 @@
 
 ```swift
 // Create the view
-let cheerView = CheerView()
-view.addSubview(cheerView)
+let confettiView = ConfettiView()
+view.addSubview(confettiView)
 
 // Configure
-cheerView.config.particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
+confettiView.config.particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
 
 // Start
-cheerView.start()
+confettiView.start()
 
 // Stop
-cheerView.stop()
+confettiView.stop()
 ```
 
 ### Configuration
@@ -50,62 +41,62 @@ Configuration will be applied at the next `start`
 
 ```swift
 // Use predefined confetti
-cheerView.config.particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
+confettiView.config.particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
 
 // Use texts
 let string = NSAttributedString(string: "❤️", attributes: [
   NSFontAttributeName: UIFont.systemFont(ofSize: 15)
 ])
-cheerView.config.particle = .text([string])
+confettiView.config.particle = .text([string])
 
 // Use images
 let image = UIImage(named: "star")
-cheerView.config.particle = .image([image])
+confettiView.config.particle = .image([image])
 
 // Change colors
-cheerView.config.colors = [UIColor.red, UIColor.green]
+confettiView.config.colors = [UIColor.red, UIColor.green]
 
 // Customize cells
-cheerView.config.customize = { cells in
+confettiView.config.customize = { cells in
 
 }
 ```
 
 ## Installation
 
-**Cheers** is available through [CocoaPods](http://cocoapods.org). To install
+**EasyConfetti** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Cheers'
+pod 'EasyConfetti'
 ```
 
-**Cheers** is also available through [Carthage](https://github.com/Carthage/Carthage).
+**EasyConfetti** is also available through [Carthage](https://github.com/Carthage/Carthage).
 To install just write into your Cartfile:
 
 ```ruby
-github "hyperoslo/Cheers"
+github "hyperoslo/EasyConfetti"
 ```
 
-**Cheers** is also available through [Accio](https://github.com/JamitLabs/Accio).
+**EasyConfetti** is also available through [Accio](https://github.com/JamitLabs/Accio).
 To install just write into your Package.swift:
 
 ```swift
-.package(url: "https://github.com/onmyway133/Cheers.git", .upToNextMajor(from: "2.3.0")),
+.package(url: "https://github.com/onmyway133/EasyConfetti.git", .upToNextMajor(from: "2.3.0")),
 ```
 
-Then link `Cheers` in your App target like so:
+Then link `EasyConfetti` in your App target like so:
 
 ```swift
 .target(
     name: "App",
     dependencies: [
-        "Cheers",
+        "EasyConfetti",
     ]
 ),
 ```
 
-**Cheers** can also be installed manually. Just download and drop `Sources` folders in your project.
+**EasyConfetti** can also be installed manually. Just download and drop `Sources` folders in your project.
 
 ## Author
 
@@ -118,8 +109,8 @@ Then link `Cheers` in your App target like so:
 
 ## Contributing
 
-We would love you to contribute to **Cheers**, check the [CONTRIBUTING](https://github.com/hyperoslo/Cheers/blob/master/CONTRIBUTING.md) file for more info.
+We would love you to contribute to **EasyConfetti**, check the [CONTRIBUTING](https://github.com/hyperoslo/EasyConfetti/blob/master/CONTRIBUTING.md) file for more info.
 
 ## License
 
-**Cheers** is available under the MIT license. See the [LICENSE](https://github.com/hyperoslo/Cheers/blob/master/LICENSE.md) file for more info.
+**EasyConfetti** is available under the MIT license. See the [LICENSE](https://github.com/hyperoslo/EasyConfetti/blob/master/LICENSE.md) file for more info.

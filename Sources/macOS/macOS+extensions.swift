@@ -1,30 +1,33 @@
 //
-//  Cocoa+Helpers.swift
-//  Cheers-macOS
+//  macOS+extensions.swift
+//  EasyConfetti
 //
-//  Created by Boy van Amstel on 07/11/2018.
-//  Copyright © 2018 Hyper Interaktiv AS. All rights reserved.
+//  Created by khoa on 8/12/2021.
 //
 
-import Cocoa
 
-public typealias UIImage = NSImage
-public extension NSImage {
+#if os(OSX)
+
+import AppKit
+
+typealias UXImage = NSImage
+typealias UXColor = NSColor
+typealias UXView = NSView
+typealias UXBezierPath = NSBezierPath
+
+extension NSImage {
     var cgImage: CGImage? {
         var proposedRect = CGRect(origin: .zero, size: size)
-        
-        return cgImage(forProposedRect: &proposedRect,
-                       context: nil,
-                       hints: nil)
+
+        return cgImage(
+            forProposedRect: &proposedRect,
+            context: nil,
+            hints: nil
+        )
     }
 }
 
-public typealias UIColor = NSColor
-
-public typealias UIView = NSView
-
-public typealias UIBezierPath = NSBezierPath
-public extension NSBezierPath {
+extension NSBezierPath {
     var cgPath: CGPath {
         let path = CGMutablePath()
         var points = [CGPoint](repeating: .zero, count: 3)
@@ -41,12 +44,23 @@ public extension NSBezierPath {
         }
         return path
     }
-    
+
     func addLine(to point: CGPoint, transform: CGAffineTransform = CGAffineTransform()) {
         line(to: point)
     }
-    
+
     func addQuadCurve(to point: CGPoint, controlPoint: CGPoint) {
         curve(to: point, controlPoint1: controlPoint, controlPoint2: controlPoint)
     }
 }
+
+#else
+
+import UIKit
+
+typealias UXImage = UIImage
+typealias UXColor = UIColor
+typealias UXView = UIView
+typealias UXBezierPath = UIBezierPath
+
+#endif
