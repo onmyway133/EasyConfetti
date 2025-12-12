@@ -15,8 +15,8 @@ import UIKit
 class ImageGenerator {
     private let size = CGSize(width: 20, height: 20)
 
-    private func generate(block: @escaping (CGContext?) -> Void) -> UIImage? {
-        var image: UIImage?
+    private func generate(block: @escaping (CGContext?) -> Void) -> UXImage? {
+        var image: UXImage?
 #if os(OSX)
         image = NSImage(size: size, flipped: false) { (rect) -> Bool in
             let context = NSGraphicsContext.current!.cgContext
@@ -37,7 +37,7 @@ class ImageGenerator {
         return image
     }
 
-    func generate(size: CGSize, string: NSAttributedString) -> UIImage? {
+    func generate(size: CGSize, string: NSAttributedString) -> UXImage? {
         return generate { context in
             let rect = CGRect(origin: .zero, size: size)
             context?.clear(rect)
@@ -45,7 +45,7 @@ class ImageGenerator {
         }
     }
 
-    func confetti(shape: Particle.ConfettiShape) -> UIImage? {
+    func confetti(shape: Particle.ConfettiShape) -> UXImage? {
         switch shape {
         case .rectangle: return rectangle()
         case .circle: return circle()
@@ -54,42 +54,42 @@ class ImageGenerator {
         }
     }
 
-    private func rectangle() -> UIImage? {
+    private func rectangle() -> UXImage? {
         return generate { context in
             let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height/2)
-            let path = UIBezierPath(rect: rect)
-            context?.setFillColor(UIColor.white.cgColor)
+            let path = UXBezierPath(rect: rect)
+            context?.setFillColor(UXColor.white.cgColor)
             context?.addPath(path.cgPath)
             context?.fillPath()
         }
     }
 
-    private func circle() -> UIImage? {
+    private func circle() -> UXImage? {
         return generate { context in
             let rect = CGRect(origin: .zero, size: self.size)
-            let path = UIBezierPath(ovalIn: rect)
-            context?.setFillColor(UIColor.white.cgColor)
+            let path = UXBezierPath(ovalIn: rect)
+            context?.setFillColor(UXColor.white.cgColor)
             context?.addPath(path.cgPath)
             context?.fillPath()
         }
     }
 
-    private func triangle() -> UIImage? {
+    private func triangle() -> UXImage? {
         return generate { context in
-            let path = UIBezierPath()
+            let path = UXBezierPath()
             path.move(to: CGPoint(x: self.size.width/2, y: 0))
             path.addLine(to: CGPoint(x: self.size.width, y: self.size.height))
             path.addLine(to: CGPoint(x: 0, y: self.size.height))
             path.close()
-            context?.setFillColor(UIColor.white.cgColor)
+            context?.setFillColor(UXColor.white.cgColor)
             context?.addPath(path.cgPath)
             context?.fillPath()
         }
     }
 
-    private func curvedQuadrilateral() -> UIImage? {
+    private func curvedQuadrilateral() -> UXImage? {
         return generate { context in
-            let path = UIBezierPath()
+            let path = UXBezierPath()
             let rightPoint = CGPoint(x: self.size.width - 5, y: 5)
             let leftPoint = CGPoint(x: self.size.width * 0.5, y: self.size.height - 8)
 
@@ -106,7 +106,7 @@ class ImageGenerator {
             path.addQuadCurve(to: CGPoint.zero,
                               controlPoint: leftPoint)
             path.close()
-            context?.setFillColor(UIColor.white.cgColor)
+            context?.setFillColor(UXColor.white.cgColor)
             context?.addPath(path.cgPath)
             context?.fillPath()
         }

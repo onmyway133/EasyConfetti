@@ -10,10 +10,10 @@
 
 import AppKit
 
-typealias UXImage = NSImage
-typealias UXColor = NSColor
-typealias UXView = NSView
-typealias UXBezierPath = NSBezierPath
+public typealias UXBezierPath = NSBezierPath
+public typealias UXColor = NSColor
+public typealias UXImage = NSImage
+public typealias UXView = NSView
 
 extension NSImage {
     var cgImage: CGImage? {
@@ -58,9 +58,9 @@ extension NSBezierPath {
 
 import UIKit
 
-typealias UXImage = UIImage
-typealias UXColor = UIColor
-typealias UXView = UIView
-typealias UXBezierPath = UIBezierPath
+public typealias UXBezierPath = UIBezierPath
+public typealias UXColor = UIColor
+public typealias UXImage = UIImage
+public typealias UXView = UIView
 
 #endif
