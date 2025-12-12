@@ -18,7 +18,7 @@ import UIKit
 /// - text: An array of texts
 public enum Particle {
     case confetti(allowedShapes: [ConfettiShape])
-    case image([UIImage])
+    case image([UXImage])
     case text(CGSize, [NSAttributedString])
 
     /// The shape of a piece of confetti.
@@ -39,14 +39,14 @@ public struct Configuration {
     public var particle: Particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
 
     /// The list of available colors. This will be shuffled
-    public var colors: [UIColor] = [
-        UIColor.red,
-        UIColor.green,
-        UIColor.blue,
-        UIColor.yellow,
-        UIColor.purple,
-        UIColor.orange,
-        UIColor.cyan
+    public var colors: [UXColor] = [
+        UXColor.red,
+        UXColor.green,
+        UXColor.blue,
+        UXColor.yellow,
+        UXColor.purple,
+        UXColor.orange,
+        UXColor.cyan
     ]
     
     /// The allowed "color range" for RGB values in each particle.

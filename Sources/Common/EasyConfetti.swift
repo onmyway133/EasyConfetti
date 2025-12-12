@@ -12,7 +12,7 @@ import UIKit
 #endif
 
 /// The view to show particles
-public class ConfettiView: UIView {
+public class ConfettiView: UXView {
     public var config = Configuration()
     var emitter: CAEmitterLayer?
     
@@ -50,7 +50,7 @@ public class ConfettiView: UIView {
         // This combination will ensure that all color/image combinations are evenly distributed.
         // For example, if you have only one color, then we still want to make sure
         // that all "allowed" particle types are represented in the result.
-        let combinations = Array<(UIColor, UIImage)>.createAllCombinations(
+        let combinations = Array<(UXColor, UXImage)>.createAllCombinations(
             from: config.colors,
             and: pickImages()
         )
@@ -97,7 +97,7 @@ public class ConfettiView: UIView {
         emitter?.birthRate = 0
     }
     
-    func pickImages() -> [UIImage] {
+    func pickImages() -> [UXImage] {
         let generator = ImageGenerator()
         
         switch config.particle {
